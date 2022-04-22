@@ -1,38 +1,138 @@
 .App {
+  margin:0px; 
+  padding:0px; 
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #ECEDEC;
+}
+
+
+/* navbar */
+
+.navbar-container{
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding:0px 15px;
+}
+.navbar-container>p{
+  font-weight: bold;
+}
+
+/* Card */
+.card{
+  margin:30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.card-image-container{
+  background-color: #fff;
+  border-radius:10px;
+  padding:10px;
+  width: 160px;
+  height: 160px;
   align-items: center;
+}
+
+.card-title{
+  text-align: left;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.card-image{
+  border-radius:15px;
+  max-width: 160px;
+  height: 100%;
+}
+.card-price{
+  margin-top:0px;
+}
+
+
+/* ProductList */
+
+.input-container{
+  width: 75%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.productlist-container{
+  margin: 30px auto;
+  
+}
+
+.product-container{
+  width:75%;
+  margin:auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+
 }
 
-.App-link {
-  color: #61dafb;
+/* Addbutton */
+
+.addbutton{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: #000;
+  bottom: 30px;
+  right: 30px;
+  border-radius:50%;
+  font-size:3rem;
+  color: #fff;
+}
+.addbutton:hover{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addbutton-container{
+  position: sticky;
+  bottom: 1rem;
+  right: 1rem;
+
+}
+
+.detail-container{
+  width: 55%;
+  margin: auto;
+  margin-top:30px;
+}
+.detail-header{
+  display:flex;
+}
+
+.detail-image{
+  width:200px;
+  height:200px;
+  border-radius:1rem;
+}
+
+.detail-text-container{
+  padding-left:5px;
+  text-align:left;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.description{
+  text-align: left;
+  font-size:12px;
+  vertical-align:middle;
+}
+
+
+.detail-product-name{
+
+  margin-top:0px;
 }
